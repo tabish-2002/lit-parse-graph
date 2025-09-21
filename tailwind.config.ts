@@ -22,6 +22,7 @@ export default {
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
+          hover: "hsl(var(--primary-hover))",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
@@ -47,16 +48,43 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        sidebar: {
-          DEFAULT: "hsl(var(--sidebar-background))",
-          foreground: "hsl(var(--sidebar-foreground))",
-          primary: "hsl(var(--sidebar-primary))",
-          "primary-foreground": "hsl(var(--sidebar-primary-foreground))",
-          accent: "hsl(var(--sidebar-accent))",
-          "accent-foreground": "hsl(var(--sidebar-accent-foreground))",
-          border: "hsl(var(--sidebar-border))",
-          ring: "hsl(var(--sidebar-ring))",
+        // Scientific Color System
+        protein: {
+          primary: "hsl(var(--protein-primary))",
+          secondary: "hsl(var(--protein-secondary))",
+          tertiary: "hsl(var(--protein-tertiary))",
+          quaternary: "hsl(var(--protein-quaternary))",
         },
+        ppi: {
+          edge: "hsl(var(--ppi-edge))",
+          highlight: "hsl(var(--ppi-highlight))",
+        },
+        literature: {
+          bg: "hsl(var(--literature-bg))",
+          accent: "hsl(var(--literature-accent))",
+        },
+        warning: "hsl(var(--warning))",
+        success: "hsl(var(--success))",
+      },
+      backgroundImage: {
+        'gradient-primary': 'var(--gradient-primary)',
+        'gradient-protein': 'var(--gradient-protein)',
+        'gradient-data': 'var(--gradient-data)',
+      },
+      boxShadow: {
+        'graph': 'var(--shadow-graph)',
+        'panel': 'var(--shadow-panel)',
+        'node': 'var(--shadow-node)',
+      },
+      sidebar: {
+        DEFAULT: "hsl(var(--sidebar-background))",
+        foreground: "hsl(var(--sidebar-foreground))",
+        primary: "hsl(var(--sidebar-primary))",
+        "primary-foreground": "hsl(var(--sidebar-primary-foreground))",
+        accent: "hsl(var(--sidebar-accent))",
+        "accent-foreground": "hsl(var(--sidebar-accent-foreground))",
+        border: "hsl(var(--sidebar-border))",
+        ring: "hsl(var(--sidebar-ring))",
       },
       borderRadius: {
         lg: "var(--radius)",

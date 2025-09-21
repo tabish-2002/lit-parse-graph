@@ -2,39 +2,73 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Scientific Protein Interaction Platform Design System */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Core Background & Text */
+    --background: 210 25% 98%;
+    --foreground: 215 25% 15%;
 
+    /* Cards & Panels */
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 215 25% 15%;
 
+    /* Popover Elements */
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 215 25% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Scientific Primary - Deep Blue */
+    --primary: 215 85% 35%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 215 85% 42%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Scientific Secondary - Light Blue */
+    --secondary: 210 50% 92%;
+    --secondary-foreground: 215 25% 15%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Muted Areas */
+    --muted: 210 25% 95%;
+    --muted-foreground: 215 15% 55%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Accent - Scientific Green */
+    --accent: 145 65% 45%;
+    --accent-foreground: 0 0% 100%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    /* Protein Node Colors */
+    --protein-primary: 215 85% 35%;
+    --protein-secondary: 275 70% 45%;
+    --protein-tertiary: 35 85% 55%;
+    --protein-quaternary: 145 65% 45%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* PPI Connection Colors */
+    --ppi-edge: 215 45% 65%;
+    --ppi-highlight: 35 85% 55%;
+
+    /* Literature Colors */
+    --literature-bg: 210 40% 96%;
+    --literature-accent: 215 75% 50%;
+
+    /* Status Colors */
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 0 0% 100%;
+    --warning: 35 85% 55%;
+    --success: 145 65% 45%;
+
+    /* Borders & Inputs */
+    --border: 215 25% 85%;
+    --input: 215 25% 85%;
+    --ring: 215 85% 35%;
+
+    /* Scientific Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(215 85% 35%), hsl(215 75% 50%));
+    --gradient-protein: linear-gradient(135deg, hsl(215 85% 35%), hsl(275 70% 45%));
+    --gradient-data: linear-gradient(180deg, hsl(210 25% 98%), hsl(210 40% 96%));
+
+    /* Scientific Shadows */
+    --shadow-graph: 0 8px 32px -8px hsl(215 85% 35% / 0.15);
+    --shadow-panel: 0 4px 16px -4px hsl(215 25% 15% / 0.1);
+    --shadow-node: 0 4px 12px -2px hsl(215 85% 35% / 0.25);
 
     --radius: 0.5rem;
 
